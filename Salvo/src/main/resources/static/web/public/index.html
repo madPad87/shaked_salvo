@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div id="particles-js"></div>
+
+
+
+<div id="header" class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 id="currentUser" class="pull-left"></h3>
+        </div>
+        <div class="col-lg-6">
+            <button type="button" id="logOut" class="btn btn-danger pull-right">Logout</button>
+            <button type="button" id="backToMenu" class="btn btn-default pull-right">Menu</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="loginContainer" class="container">
+    <div id="login-box">
+        <div class="logo">
+            <img src="../images/logo.png" class="img img-responsive img-circle center-block"/>
+        </div><!-- /.logo -->
+        <div class="controls">
+            <input type="text" id="username" name="username" placeholder="Username" class="form-control" />
+            <input type="password" id="password" name="username" placeholder="Password" class="form-control" />
+            <p id="error"></p>
+            <button id="submit" class="button">Login</button>
+            <button id="signUp" class="button">Sign Up</button>
+        </div><!-- /.controls -->
+    </div><!-- /#login-box -->
+</div><!-- /.container -->
+
+
+
+<div id="menu" class="container text-center">
+    <img src="../images/logo.png" class="img img-responsive img-circle center-block"/>
+    <ul class="vertical-list">
+    <li><button id="newGame" class='button'>New Game</button></li>
+    <li><button id="joinGame" class='button'>Join Game</button></li>
+    <li><button id="continue" class='button'>Continue</button></li>
+        <li><button id="leaderBoard" class='button'>Leaderboard</button></li>
+    </ul>
+</div>
+
+
+<div id="statsContainer" class="container">
+    <div class="row" id="mainRow">
+        <div class="col-sm-12">
+            <h1 id="leaderBoardTitle">Leaderboard</h1>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Tied</th>
+                </tr>
+                </thead>
+                <tbody id="myTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div id="joinGameContainer" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Games</h1>
+            <ul id="joinGames">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="returnGameContainer" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="text-center">Games</h1>
+            <ul id="returnGames">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<ul id="allGames">
+</ul>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

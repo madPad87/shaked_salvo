@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+     font-family: 'Bungee Inline', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+}
+
+tr {
+    background: white;
+}
+
+#mainRow h1 {
+    margin-bottom: 50px;
+}
+
+#playerOne {
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: white;
+}
+
+#playerTwo h2, #playerOne h2 {
+    font-size: 22px;
+}
+
+#playerTwo {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color:white;
+}
+
+#playerName {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-weight: bold;
+}
+
+#logOut {
+    position: absolute;
+    top: 60px;
+    right: 75px;
+    display: none;
+}
+
+#flex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#container1 {
+	outline:3px solid white;
+	height:500px;
+	width:500px;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	display: flex;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    background: black;
+    color: white;
+}
+
+#container2 {
+	outline:3px solid white;
+	height:500px;
+	width:500px;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	display: flex;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    background: black;
+    color: white;
+}
+
+.grid1 {
+    width: 50px;
+    height: 50px;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+}
+
+.grid2 {
+    width: 50px;
+    height: 50px;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+}
+
+#logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#createGame {
+    margin-top: 50px;
+}
+
+#salvoesDiv, #shipsDiv {
+    color: white;
+}
+
+#myForm, #signUp {
+    display: none;
+}
+
+#signUp {
+    float: right;
+}
+
+#myForm {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+      background: gray;
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 30px;
+}
+
+.logOutDiv {
+    text-align: center;
+}
+
+#error {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#myShips {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#Carrier {
+    width: 227.2725px;
+    height: 45.4545px;
+    background-color: yellow;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Battleship {
+    width: 181.818px;
+    height: 45.4545px;
+    background-color: orange;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Submarine {
+    width: 136.3635px;
+    height: 45.4545px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#Destroyer {
+    width: 136.3635px;
+    height: 45.4545px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#PatrolBoat {
+    width: 90.909px;
+    height: 45.4545px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#myShips span {
+    color: black;
+    font-size: 20px;
+}
+
+.toggleSalvo {
+    background-color: white;
+}
+
+.ship {
+    padding: 0.001px;
+}
+
+.shipDestroyer {
+    background: green;
+}
+.shipBattleship {
+    background: orange;
+}
+.shipCarrier {
+    background: yellow;
+}
+.shipPatrolBoat {
+    background: blue;
+}
+.shipSubmarine {
+    background: pink;
+}
+
+#setSalvoes, #sendSalvoes, #allStats {
+    display: none;
+}
+
+#sendSalvoes {
+    width: 200px;
+    font-size: 20px;
+}
+
+#gameState, #shipsLeft {
+    text-align: center;
+    color: white;
+}
+#shipsLeft {
+    display: none;
+}
+
+#salvoesDiv {
+    display: none;
+}
+
+#particles-js{
+  	width: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	background-position: 50% 50%;
+  	position: absolute;
+  	top: 0px;
+  	z-index: -1;
+}
+
+#postShips {
+    margin: 0 auto;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.button {
+    outline: 0;
+    display: block;
+    color: #9fa8b0;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px #1f272b;
+    border: 1px solid #1c252b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #232B30; /* old browsers */
+    background: -moz-linear-gradient(top, #3D4850 3%, #313d45 4%, #232B30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3D4850), color-stop(4%,#313d45), color-stop(100%,#232B30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
+}
+.button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #4C5A64; /* old browsers */
+    background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+}
+
+#hitShips {
+    color: silver;
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hitBoat {
+    width: 45.45px;
+    height:45.45px;
+    outline: 1px solid black;
+    background: white;
+    color: red;
+}
+
+.flexBoat {
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+}

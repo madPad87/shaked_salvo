@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salvo</title>
+    <link rel="stylesheet" href="./public/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div  id="logo">
+    <img src="images/salvologo.jpg" alt="logo" width="300">
+    <br>
+    <button id="createGame" class="btn btn-primary">Create Game</button>
+
+</div>
+<h3 id="playerName"></h3>
+<div class="container">
+    <div class="row" id="mainRow">
+        <div class="col-sm-6">
+            <h1 id="leaderBoard">Leaderboard</h1>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Total</th>
+                        <th>Won</th>
+                        <th>Lost</th>
+                        <th>Tied</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <h1>All Games</h1>
+            <ul id="allGames" class="list-group">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<button id="logOut">Logout</button>
+<div id="myForm">
+    <input id="username" class="form-control" placeholder="Username" name="username"><br/>
+    <input id="password" type="password" class="form-control" placeholder="Password" name="password"><br/>
+    <button class="btn btn-primary" id="submit" type="submit">Login!</button>
+    <button class="btn btn-primary" id="signUp">Sign Up</button>
+    <p id="error"></p>
+</div>
+<script src="./public/jquery-3.3.1.min.js"></script>
+<script src="./public/bootstrap.min.js"></script>
+<script src="games.js"></script>
+</body>
+</html>

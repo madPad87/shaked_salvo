@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="public/bootstrap.min.css">
+    <link rel="stylesheet" href="alertify.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game</title>
+</head>
+<body>
+
+<img src="images/logo.png" width="350" class="img img-responsive img-circle center-block"/>
+<div id="playerOne">
+    <h2><span id="player1"></span></h2>
+    <button class="button" id="logOutGame">Logout</button>
+    <button id="backToMenu" class="button">Exit To Menu</button>
+</div>
+
+<div id="playerTwo"><h2><span id="player2"></span></h2></div>
+<h2 id="gameState"></h2>
+<h2 id="shipsLeft"></h2>
+<div id="flex">
+    <div id="shipsDiv"><h1 class="text-center">Ships</h1>
+    <div id="container1"></div>
+    </div>
+
+    <div id="hitShips">
+        <h1><strong>H<span style="color: red">i</span>ts</strong></h1>
+
+        <div> Carrier
+            <div class="flexBoat" id="CarrierHit">
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+            </div>
+        </div>
+        <div>Battleship
+            <div class="flexBoat" id="BattleshipHit">
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+            </div>
+        </div>
+        <div>Destroyer
+            <div class="flexBoat" id="DestroyerHit">
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+            </div>
+        </div>
+        <div>Submarine
+            <div class="flexBoat" id="SubmarineHit">
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+            </div>
+        </div>
+        <div>Patrol Boat
+            <div class="flexBoat" id="PatrolBoatHit">
+                <div class="hitBoat"></div>
+                <div class="hitBoat"></div>
+            </div>
+        </div>
+    </div>
+    <div id="salvoesDiv"><h1 class="text-center">Salvoes</h1>
+    <div id="container2"></div>
+    </div>
+</div>
+
+<div class="text-center">
+    <button class="button" id="postShips">Send Ships!</button>
+    <button class="button" id="sendSalvoes">Send Salvoes!</button>
+</div>
+
+<div id="myShips">
+        <div class="col-md-3"> Carrier
+                <div class="draggable" id="Carrier">
+                    <span class="rotate glyphicon glyphicon-repeat"></span>
+                </div>
+        </div>
+        <div class="col-md-2">Battleship
+            <div  class="draggable" id="Battleship">
+                <span class="rotate glyphicon glyphicon-repeat"></span>
+            </div>
+        </div>
+        <div class="col-md-2">Destroyer
+            <div class="draggable" id="Destroyer">
+               <span class="rotate glyphicon glyphicon-repeat"></span>
+            </div>
+        </div>
+        <div class="col-md-2">Submarine
+            <div class="draggable" id="Submarine">
+                <span class="rotate glyphicon glyphicon-repeat"></span>
+            </div>
+        </div>
+        <div class="col-md-2">Patrol Boat
+            <div class="draggable" id="PatrolBoat">
+                <span class="rotate glyphicon glyphicon-repeat"></span>
+            </div>
+        </div>
+</div>
+
+<div id="particles-js"></div>
+<script src="public/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script><script src="public/bootstrap.min.js"></script>
+<script src="game.js"></script>
+<script type="text/javascript" src="alertify.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body, html {
+	height: 100%;
+	background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+	background:black;
+	position: relative;
+	font-family: 'Bungee Inline', cursive;
+}
+
+#loginContainer {
+    display: none;
+}
+
+#login-box {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 350px;
+	margin: 0 auto;
+	border: 1px solid black;
+    background: #20282D; /* old browsers */
+    background: -moz-linear-gradient(top, #20282D 3%, #252E34 51%, #222A30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#20282D), color-stop(51%,#252E34), color-stop(100%,#222A30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20282D', endColorstr='#222A30',GradientType=0 ); /* ie */
+    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */	min-height: 250px;
+	padding: 20px;
+	z-index: 9999;
+}
+#login-box .logo .logo-caption {
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#login-box .button {
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    background: #515B62; /* old browsers */
+    background: -moz-linear-gradient(top, #515B62 3%, #444E55 5%, #394147 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#515B62), color-stop(5%,#444E55), color-stop(100%,#394147)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515B62', endColorstr='#394147',GradientType=0 ); /* ie */}
+
+#login-box .logo .tweak {
+	color: #ff5252;
+}
+
+#login-box .controls {
+	padding-top: 30px;
+}
+
+#login-box .controls input {
+	border-radius: 0px;
+	background: rgb(98, 96, 96);
+	border: 0px;
+	color: white;
+}
+
+#login-box .controls input:focus {
+	box-shadow: none;
+}
+
+#login-box .controls input:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#login-box .controls input:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#particles-js{
+  	width: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	background-position: 50% 50%;
+  	position: absolute;
+  	top: 0px;
+  	z-index: 0;
+}
+
+#currentUser {
+    margin-top: 12px;
+}
+
+#logOut, #backToMenu {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+#backToMenu, #allGames {
+    display: none;
+}
+
+#header {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 50px;
+    background: #232B30; /* old browsers */
+    background: -moz-linear-gradient(top, #3D4850 3%, #313d45 4%, #232B30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3D4850), color-stop(4%,#313d45), color-stop(100%,#232B30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+    width: 100%;
+    color: white;
+}
+
+#statsContainer {
+    padding-top: 50px;
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+#createGame {
+    z-index: 2;
+}
+
+#menu {
+    display: none;
+    width: 60%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40px;
+}
+
+#menu .btn {
+    width: 300px;
+    height: 90px;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+}
+
+#error {
+    color: white;
+}
+
+.button {
+    outline: 0;
+    padding: 20px 12px;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    color: #9fa8b0;
+    font-weight: bold;
+    text-shadow: 1px 1px #1f272b;
+    border: 1px solid #1c252b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #232B30; /* old browsers */
+    background: -moz-linear-gradient(top, #3D4850 3%, #313d45 4%, #232B30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3D4850), color-stop(4%,#313d45), color-stop(100%,#232B30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
+}
+.button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #4C5A64; /* old browsers */
+    background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+}
+
+/* Vertical List: */
+.vertical-list {
+    margin: 0 auto;
+    font-size: 45px;
+    list-style: none;
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #20282D; /* old browsers */
+    background: -moz-linear-gradient(top, #20282D 3%, #252E34 51%, #222A30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#20282D), color-stop(51%,#252E34), color-stop(100%,#222A30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20282D', endColorstr='#222A30',GradientType=0 ); /* ie */
+    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+}
+.vertical-list .button {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #515B62; /* old browsers */
+    background: -moz-linear-gradient(top, #515B62 3%, #444E55 5%, #394147 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#515B62), color-stop(5%,#444E55), color-stop(100%,#394147)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515B62', endColorstr='#394147',GradientType=0 ); /* ie */
+}
+.vertical-list .button:hover {
+    background: #5F6B72; /* old browsers */
+    background: -moz-linear-gradient(top, #5F6B72 3%, #56646C 4%, #4D5A62 50%, #434D54 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#5F6B72), color-stop(4%,#56646C), color-stop(50%,#4D5A62), color-stop(100%,#434D54)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5F6B72', endColorstr='#434D54',GradientType=0 ); /* ie */
+}
+
+#leaderBoardTitle {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+#joinGameContainer, #returnGameContainer {
+    padding-top: 50px;
+    display: none;
+    color: white;
+}
+
+#joinGameContainer h1, #returnGameContainer h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#returnGames li, #joinGames li {
+    text-shadow: 1px 1px #1f272b;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid white;
+    width: 750px;
+    height: 170px;
+     background: #232B30; /* old browsers */
+     background: -moz-linear-gradient(top, #3D4850 3%, #313d45 4%, #232B30 100%); /* firefox */
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#3D4850), color-stop(4%,#313d45), color-stop(100%,#232B30)); /* webkit */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */:
+         -moz-box-shadow: 1px 1px 2px rgba(255,255,255,0.1); /* Firefox */
+         -webkit-box-shadow: 2px 2px 2px rgba(255,255,255,0.1); /* Safari, Chrome */
+         box-shadow: 1px 1px 2px rgba(255,255,255,0.1); /* CSS3 */
+}
+
+#returnGames li .button, #joinGames li .button {
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
